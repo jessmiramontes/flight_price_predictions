@@ -34,7 +34,7 @@ st.markdown("""
         Since there are 30 million flights per year with 4.5 million passengers, and this year the International 
         Air Transport Association (IATA) estimates that passenger revenues will reach 744 billion dollars, 
         15% more than in 2023, we created an app that predicts flight prices. This is convenient for users
-        that are looking to get the best deal possible and for Airlines to implement campaigns to increase sales.
+        looking to get the best deal possible and for Airlines to implement campaigns to increase sales.
             The purpose of this study is to analyze the flight booking dataset from the “Ease My Trip” website,
         using various statistical hypothesis tests to see which variables affect the most. Then, machine
         learning algorithms will predict the prices and compare them to see which is more effective for this task.
@@ -305,7 +305,7 @@ def table_results():
 
 table_result = table_results()
 st.dataframe(table_result)
-image = Image.open('permutation_importance.jpg.png') 
+image = Image.open('permutation.jpg') 
 st.image(image, caption='permutation importance', use_container_width=True)
 st.markdown(""" <h1 style='text-align: center;'>Summary</h1> """, unsafe_allow_html=True)
 st.write(f"""
