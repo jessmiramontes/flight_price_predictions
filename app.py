@@ -305,5 +305,8 @@ Method: The dataset was segmented into categorical and numerical variables for a
 Findings: An RMSE of 6761.71 and an R2 of 0.98 were obtained for a test dataset of n=240122 entries. These optimal values were achieved with the Random Forest Regressor.
 
 Interpretation: Our prediction was above the actual values, i.e. the demand was overestimated. In the analysis of the importance of variables, it was observed that class and duration were the variables that had the greatest impact on the prediction.  
+
+Improvements: Develop the input form for the application that predicts prices since the “duration” variable is dependent on the others and should not be a value selected by the user.  Also, Business Class is only available for 2 airlines, the user should not be able to pick it for any airline.
+
          """)
 
