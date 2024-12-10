@@ -24,13 +24,22 @@ from sklearn.preprocessing import (OneHotEncoder,
 
 st.markdown(""" <h1 style='text-align: center;'>Price Flight Predictions</h1> """, unsafe_allow_html=True)
 st.markdown(""" <h2 style='text-align: center;'>Using Machine learning </h2> """, unsafe_allow_html=True)
+st.markdown(""" <p style='text-align: center;'>Jessica Miramontes & Daniel Alvizo </p> """, unsafe_allow_html=True)
+image = Image.open('avion2.webp') 
+st.image(image, caption='avion', use_container_width=True)
 
-st.write('Jessica Miramontes & Daniel Alvizo')
+
 st.markdown("""
     <div style="text-align: center;">
-        The purpose of this study is to analyze the flight booking dataset from the “Ease My Trip” website,
+        Since there are 30 million flights per year with 4.5 million passengers, and this year the International 
+        Air Transport Association (IATA) estimates that passenger revenues will reach 744 billion dollars, 
+        15% more than in 2023, we created an app that predicts flight prices. This is convenient for users
+        that are looking to get the best deal possible and for Airlines to implement campaigns to increase sales.
+            The purpose of this study is to analyze the flight booking dataset from the “Ease My Trip” website,
         using various statistical hypothesis tests to see which variables affect the most. Then, machine
         learning algorithms will predict the prices and compare them to see which is more effective for this task.
+        
+        
     </div>
     """, unsafe_allow_html=True)
 
