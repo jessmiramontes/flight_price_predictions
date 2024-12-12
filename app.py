@@ -222,7 +222,7 @@ between the dependent variable and one or more independent features by fitting a
 observed data.
 """)
 
-st.write(f'Linear regression accuracy score: {lr_score * 100:.2f}%')
+st.write(f'Linear regression R2 score: {lr_score * 100:.2f}%')
 fig, ax = plt.subplots()
 ax.scatter(x=y_test, y=pred, c='k')
 ax.plot([0, 40000], [-3000, 20000], c='r')
@@ -249,7 +249,7 @@ def decision_tree_regressor():
     return dtr_score, dtr_mse, dtr_rmse, dtr_mae, pred_dtr
 
 dtr_score, dtr_mse, dtr_rmse, dtr_mae, pred_dtr = decision_tree_regressor()
-st.write(f'Decision Tree Regressor accuracy score: {dtr_score * 100:.2f}%')
+st.write(f'Decision Tree Regressor R2 score: {dtr_score * 100:.2f}%')
 
 fig, ax = plt.subplots()
 ax.scatter(x=y_test, y=pred_dtr, c='k')
@@ -277,7 +277,7 @@ def random_forest_regressor():
     return rf_score, rf_mse, rf_rmse, rf_mae, pred_rf
 
 rf_score, rf_mse, rf_rmse, rf_mae, pred_rf = random_forest_regressor()
-st.write(f'Random Forest Regressor accuracy score: {rf_score * 100:.2f}%')
+st.write(f'Random Forest Regressor R2 score: {rf_score * 100:.2f}%')
 
 fig, ax = plt.subplots()
 ax.scatter(x=y_test, y=pred_rf, c='k')
